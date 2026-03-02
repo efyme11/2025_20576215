@@ -1,0 +1,16 @@
+# Executables
+*.exe
+*.dll
+*.o
+*.obj
+
+# Build folders
+build/
+bin/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
