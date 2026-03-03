@@ -11,6 +11,7 @@ qt_add_executable(Qt_Real
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+
 )
 
 target_link_libraries(Qt_Real

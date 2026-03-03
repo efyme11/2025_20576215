@@ -1,7 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QStandardItemModel>
 #include <QMainWindow>
+#include <QSortFilterProxyModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,10 +20,12 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-
-    void on_label_linkActivated(const QString &link);
+    void onItemSelected(const QModelIndex &current,
+                        const QModelIndex &previous);
 
 private:
     Ui::MainWindow *ui;
+    QStandardItemModel *model;
+    QSortFilterProxyModel *proxyModel;
 };
 #endif // MAINWINDOW_H
