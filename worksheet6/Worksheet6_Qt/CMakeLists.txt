@@ -11,6 +11,10 @@ qt_add_executable(Worksheet6_Qt
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    ModelPart.h
+    ModelPart.cpp
+    ModelPartList.cpp
+    ModelPartList.h
 )
 
 target_link_libraries(Worksheet6_Qt
